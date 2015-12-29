@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textfield_text: UITextField!
+    @IBOutlet weak var label_hello: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //accion del boton saludar
+    @IBAction func button_hello(sender: UIButton) {
+        //poner nuevo texto recogido
+        label_hello.text = "Hola \(textfield_text.text!)"
+        
+        //Poner la caja de texto vacía
+        textfield_text.text = ""
+        
+        //Ocultar el teclado cuando hayamos hecho click en el botón
+        self.view.endEditing(true)
+        
+        
+    }
 
 }
 
