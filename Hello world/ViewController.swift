@@ -36,6 +36,13 @@ class ViewController: UIViewController {
         
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestViewController : SecondViewController = segue.destinationViewController as! SecondViewController
+        
+        DestViewController.textPassed = textfield_text.text!
+        
+    }
 
 }
 
