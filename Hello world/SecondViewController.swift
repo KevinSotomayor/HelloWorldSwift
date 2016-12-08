@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var label_text: UILabel!
     
     var textPassed = String()
-    
+        
     override func viewDidLoad() {
         label_text.text = textPassed
         super.viewDidLoad()
@@ -26,7 +26,6 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
 }
 
 

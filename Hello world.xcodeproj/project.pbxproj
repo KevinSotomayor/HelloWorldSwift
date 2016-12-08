@@ -100,10 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				0A7C20781C328CA8002E751A /* AppDelegate.swift */,
+				0A7C207F1C328CA9002E751A /* Assets.xcassets */,
 				0AF07D341C334F150096A374 /* SecondViewController.swift */,
 				0A7C207A1C328CA8002E751A /* ViewController.swift */,
 				0A7C207C1C328CA9002E751A /* Main.storyboard */,
-				0A7C207F1C328CA9002E751A /* Assets.xcassets */,
 				0A7C20811C328CA9002E751A /* LaunchScreen.storyboard */,
 				0A7C20841C328CA9002E751A /* Info.plist */,
 			);
@@ -191,21 +191,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kevin Sotomayor Vergara";
 				TargetAttributes = {
 					0A7C20741C328CA8002E751A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = SG2PVJ8964;
+						LastSwiftMigration = 0800;
 					};
 					0A7C20881C328CA9002E751A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = SG2PVJ8964;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0A7C20741C328CA8002E751A;
 					};
 					0A7C20931C328CA9002E751A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = SG2PVJ8964;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0A7C20741C328CA8002E751A;
 					};
 				};
@@ -408,6 +411,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-world";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -419,6 +423,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-world";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-worldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello world.app/Hello world";
 			};
 			name = Debug;
@@ -442,6 +449,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-worldTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hello world.app/Hello world";
 			};
 			name = Release;
@@ -453,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-worldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Hello world";
 				USES_XCTRUNNER = YES;
 			};
@@ -465,6 +475,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.helloworld.ks.Hello-worldUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Hello world";
 				USES_XCTRUNNER = YES;
 			};

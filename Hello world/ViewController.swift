@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // dismiss keyboard anywhere
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    //function called when tap is recognized
+    func dismissKeyboard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +33,7 @@ class ViewController: UIViewController {
     }
 
     //accion del boton saludar
-    @IBAction func button_hello(sender: UIButton) {
+    @IBAction func button_hello(_ sender: UIButton) {
         //poner nuevo texto recogido
         label_hello.text = "Hola \(textfield_text.text!)"
         
@@ -33,12 +42,14 @@ class ViewController: UIViewController {
         
         //Ocultar el teclado cuando hayamos hecho click en el botón
         self.view.endEditing(true)
-        
+        // dismiss keyboard anywhere
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var DestViewController : SecondViewController = segue.destinationViewController as! SecondViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let DestViewController : SecondViewController = segue.destination as! SecondViewController
         
         DestViewController.textPassed = textfield_text.text!
         
